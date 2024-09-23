@@ -1,0 +1,136 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Zen Kaku Gothic Antique", sans-serif;
+}
+
+/* common class start  */
+
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.oflex {
+  display: flex;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+/* common class end  */
+
+/* css start  */
+body {
+  padding: 4rem;
+  background-color: #e5e5e5;
+  height: 100vh;
+}
+#container {
+  width: 100%;
+  max-width: 1000px;
+  background-color: white;
+}
+
+/* left-div start  */
+#container #left-div {
+  width: 50%;
+  background-image: url(../img/login-bg-left.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 4rem 5rem;
+}
+
+#container #left-div img:first-child {
+  height: 3rem;
+  margin-bottom: 2rem;
+}
+
+#container #left-div img:nth-child(2) {
+  height: 18rem;
+  margin: 2rem 0;
+}
+
+#container #left-div h4 {
+  font-size: 1.6rem;
+  color: white;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+#container #left-div p {
+  color: #ffffff99;
+  text-align: center;
+  font-size: 0.9rem;
+}
+/* left-div end  */
+/* right-div start  */
+#right-div {
+  width: 50%;
+  padding: 4rem 5rem;
+  text-align: center;
+}
+
+#right-div h4 {
+  font-size: 1.6rem;
+}
+
+#right-div .button-sec {
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+#right-div .button-sec button {
+  outline: none;
+  border: none;
+  padding: 0.6rem 1rem;
+  font-size: 0.8rem;
+  border-radius: 1.2rem;
+  cursor: pointer;
+  background-color: #fafafa;
+  box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.2);
+}
+
+#right-div .button-sec i {
+  margin-right: 0.5rem;
+  font-size: 0.8rem;
+}
+
+#right-div form {
+  text-align: left;
+  width: 100%;
+  margin-top: 2rem;
+  font-size: 0.8rem;
+  color: #aeaaaa;
+  font-weight: 450;
+  padding: 0 1rem;
+}
+
+#right-div form input {
+  margin: 0.5rem 0 1rem 0;
+  outline: none;
+  border: none;
+  border-bottom: #aeaaaa solid 1px;
+  width: 100%;
+  padding: 0.3rem 0;
+}
+
+#right-div form input::placeholder {
+  color: #181717;
+  font-weight: 450;
+  font-size: 1.1rem;
+}
+
+#right-div form input[type="checkbox"] {
+  vertical-align: middle;
+  position: relative;
+  /* bottom: 1px; */
+}
+
+label {
+  display: block;
+}
+/* right-div end  */
+/* css end  */
