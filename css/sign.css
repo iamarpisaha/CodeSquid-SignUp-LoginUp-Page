@@ -126,6 +126,7 @@ body {
 #right-div form input[type="checkbox"] {
   vertical-align: middle;
   position: relative;
+  width: auto;
   /* bottom: 1px; */
 }
 
