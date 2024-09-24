@@ -39,7 +39,7 @@
 body {
   padding: 4rem;
   background-color: #e5e5e5;
-  height: 100vh;
+  min-height: 100vh;
 }
 #container {
   width: 100%;
@@ -190,4 +190,62 @@ label {
   background-color: #7e7d7d;
 }
 /* right-div end  */
+
+/* responsive start  */
+@media only screen and (max-width: 1103px) {
+  #container #left-div,
+  #right-div {
+    padding: 4rem 3rem;
+  }
+
+  @media only screen and (max-width: 975px) {
+    #container #left-div,
+    #right-div {
+      padding: 2rem;
+    }
+  }
+  @media only screen and (max-width: 911px) {
+    #container #left-div {
+      display: none;
+    }
+    #container #right-div {
+      width: 100%;
+      padding: 4rem 3rem;
+    }
+  }
+  @media only screen and (max-width: 552px) {
+    #container #right-div {
+      padding: 2rem;
+    }
+    #checkbox-row {
+      flex-direction: column;
+      margin-top: 0.5rem;
+      gap: 0.5rem;
+    }
+
+    #checkbox-row button {
+      width: 100%;
+    }
+  }
+  @media only screen and (max-width: 520px) {
+    #container #right-div #google-github-btn {
+      flex-direction: column;
+    }
+    #container #right-div h4 {
+      font-size: 1.4rem;
+    }
+    #right-div #google-github-btn button {
+      padding: 0.25rem 0.8rem;
+      font-size: 0.8rem;
+    }
+    #right-div .button-sec i {
+      font-size: 0.7rem;
+    }
+    #right-div form input::placeholder {
+      font-weight: 400;
+      font-size: 0.9rem;
+    }
+  }
+}
+/* responsive end  */
 /* css end  */
