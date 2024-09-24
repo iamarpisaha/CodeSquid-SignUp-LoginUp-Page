@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./css/sign.css" />
+    <link rel="stylesheet" href="./css/index.css" />
 
     <!-- icon link  -->
     <!-- Option 1: Include in HTML -->
@@ -56,11 +56,19 @@
             <label for="password">Password</label>
             <input type="password" id="password" placeholder="********" />
           </div>
-          <div class="oflex">
-            <input type="checkbox" id="tick" />
-            <label for="tick">Remember me</label>
+          <div id="checkbox-row" class="flex-between">
+            <div class="items-center">
+              <input type="checkbox" id="tick" />
+              <label for="tick">Remember me</label>
+            </div>
+            <div>
+              <button type="submit" id="login-btn">log in</button>
+            </div>
           </div>
         </form>
+        <p id="signup-txt">
+          No account yet ? <a href="./signup.html">sign up </a>
+        </p>
       </div>
     </div>
   </body>

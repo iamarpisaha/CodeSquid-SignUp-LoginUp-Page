@@ -20,6 +20,19 @@
 .flex-col {
   flex-direction: column;
 }
+.flex-between {
+  display: flex;
+  justify-content: space-between;
+}
+.content-center {
+  display: flex;
+  justify-content: center;
+}
+
+.items-center {
+  display: flex;
+  align-items: center;
+}
 /* common class end  */
 
 /* css start  */
@@ -45,7 +58,6 @@ body {
 
 #container #left-div img:first-child {
   height: 3rem;
-  margin-bottom: 2rem;
 }
 
 #container #left-div img:nth-child(2) {
@@ -57,7 +69,7 @@ body {
   font-size: 1.6rem;
   color: white;
   text-align: center;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
 }
 
 #container #left-div p {
@@ -118,20 +130,64 @@ body {
 }
 
 #right-div form input::placeholder {
-  color: #181717;
+  color: #7b7979;
   font-weight: 450;
-  font-size: 1.1rem;
+  font-size: 1.05rem;
 }
 
 #right-div form input[type="checkbox"] {
-  vertical-align: middle;
-  position: relative;
-  width: auto;
-  /* bottom: 1px; */
+  margin: 0 0.5rem 0 0;
+  width: 18px;
+  height: 18px;
+  accent-color: #7b76f1;
 }
 
 label {
   display: block;
+}
+
+#checkbox-row {
+  margin-top: 1rem;
+}
+
+#checkbox-row #login-btn {
+  outline: none;
+  border: none;
+  background-color: #7b76f1;
+  color: white;
+  padding: 0.6rem 2rem;
+  border-radius: 1.5rem;
+  font-size: 0.8rem;
+  font-weight: 500;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+#signup-txt {
+  margin-top: 2rem;
+  font-size: 0.8rem;
+  color: #7e7d7d;
+  font-weight: 450;
+  padding: 0 1rem;
+}
+
+#signup-txt a {
+  text-decoration: none;
+  color: #000000;
+  text-transform: uppercase;
+  font-weight: 500;
+  margin-left: 0.5rem;
+  position: relative;
+}
+
+#signup-txt a::after {
+  content: "";
+  width: 3rem;
+  height: 1px;
+  position: absolute;
+  top: 1.1rem;
+  left: 0;
+  background-color: #7e7d7d;
 }
 /* right-div end  */
 /* css end  */
