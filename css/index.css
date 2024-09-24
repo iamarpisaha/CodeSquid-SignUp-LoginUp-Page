@@ -193,6 +193,9 @@ label {
 
 /* responsive start  */
 @media only screen and (max-width: 1103px) {
+  body {
+    padding: 2rem;
+  }
   #container #left-div,
   #right-div {
     padding: 4rem 3rem;
@@ -205,6 +208,9 @@ label {
     }
   }
   @media only screen and (max-width: 911px) {
+    body {
+      padding: 1rem;
+    }
     #container #left-div {
       display: none;
     }
